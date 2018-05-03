@@ -25,7 +25,7 @@
             GameObject bulletClone = Instantiate(bullet, bullet.transform.position, bullet.transform.rotation) as GameObject;
             bulletClone.SetActive(true);
             Rigidbody rb = bulletClone.GetComponent<Rigidbody>();
-            rb.AddForce(-bullet.transform.forward * bulletSpeed);
+            rb.AddForce(-bullet.transform.up * bulletSpeed); //changement de foward en right
             Destroy(bulletClone, bulletLife);
         }
     }
