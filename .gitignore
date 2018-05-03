@@ -33,3 +33,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+HTC Rebirth/Assets/Scene Principal.unity
+*.unity
+*.asset
