@@ -1053,6 +1053,7 @@ namespace VRTK
                 }
 
                 footCollider = GenerateCapsuleCollider(footColliderContainer, 0f);
+                
             }
         }
 
@@ -1104,7 +1105,7 @@ namespace VRTK
                 if (footCollider != null)
                 {
                     float footThickness = bodyCollider.radius * stepThicknessMultiplier;
-                    footCollider.radius = footThickness;
+                    footCollider.radius =footThickness; //*************************************************
                     footCollider.height = CalculateStepUpYOffset();
                     footCollider.center = new Vector3(headset.localPosition.x, CalculateStepUpYOffset() * 0.5f, headset.localPosition.z);
                 }
